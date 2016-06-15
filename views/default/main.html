@@ -1,0 +1,31 @@
+
+<div class="imgdiv">
+{{extend 'layout.html'}}
+<h1 >Pictures</h1>
+
+<a href="{{=URL('add_pictures')}}"  class="btn btn-primary">store another picture</a>
+
+
+{{for picture in pictures:}}
+<div class="textName" >
+        {{=picture.name}}
+</div>
+	
+<div class= "textFiled"  >
+		
+		<p class="paraInmain" >
+		{{=picture.profile}}</p>
+		
+</div>
+<div >
+       <img style="width:50%" src="{{=URL('download',args=picture.picture)}}"/>
+	   
+</div>  
+	   
+<div >	   
+        <a   class="btn btn-default" href="{{=URL('edit_picture',args=[picture.id])}}">Edit <i class="glyphicon glyphicon-edit"></i></a>
+</div>
+{{pass}}  
+  
+
+</div>

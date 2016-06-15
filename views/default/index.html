@@ -1,0 +1,889 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>My Project</title>
+<link rel="stylesheet" href="../static/css/styles.css">	
+  <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
+
+    <link rel="stylesheet" href="{{=URL('static','css/web2py-bootstrap3.css')}}"/>
+
+    <link rel="shortcut icon" href="{{=URL('static','images/favicon.ico')}}" type="image/x-icon">
+
+    <link rel="apple-touch-icon" href="{{=URL('static','images/favicon.png')}}">
+
+    <!-- All JavaScript at the bottom, except for Modernizr which enables
+         HTML5 elements & feature detects -->
+
+
+    <script src="{{=URL('static','js/modernizr-2.8.3.min.js')}}"></script>
+<style>
+
+body.main{
+	background-image: url(../static/images/nebula.jpg);
+	background-size:cover;
+	padding-bottom:100px;
+	
+}
+</style>	
+</head>
+  
+
+  <!-- <body class="main" style="color:white; background-image:url(../static/images/background.jpg); background-size:cover; ">  -->
+  <body class="main" >
+  <nav role="navigation">
+
+      <div >
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+          {{=response.logo or ''}}
+        </div>
+
+
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+          
+
+          {{if response.menu:}}
+          {{=MENU(response.menu, _class='nav navbar-nav',li_class='dropdown',ul_class='dropdown-menu')}}
+          {{pass}}
+
+        </div>
+
+
+      </div>
+
+    </nav>
+    
+	<h1 class = "titleFif">Fifty-Fifty</h1>
+	
+
+<div class="w3-content" style="max-width:70%;  ">
+  <img class="mySlides" id="img1" src="../static/images/outside.jpg"  >
+  
+  <p id="img2"    onclick="this.focus()"> 
+  Bear Lake Monster 
+ <br>
+  A Utah Ghost Story 
+<br>
+retold by,
+<br>
+S. E. Schlosser
+<br>
+If you travel to Bear Lake in Utah on a quiet day, you just might catch a glimpse of the Bear Lake Monster. The monster looks like a huge brown snake and is nearly 90 feet long. It has ears that stick out from the side of its skinny head and a mouth big enough to eat a man. According to some, it has small legs and it kind of scurries when it ventures out on land. But in the water - watch out! It can swim faster than a horse can gallop - makes a mile a minute on a good day.Sometimes the monster likes to sneak up on unwary swimmers and blow water at them. The ones it doesn't carry off to eat, that is.
+
+A feller I heard about spotted the monster early one evening as he was walking along the lake. He tried to shoot it with his rifle. The man was a crack shot, but not one of his bullets touched that monster. It scared the heck out of him and he high tailed it home faster than you can say Jack Robinson. Left his rifle behind him and claimed the monster ate it.
+
+Sometimes, when the monster has been quiet for a while, people start saying it is gone for good. Some folks even dredge up that old tale that says how Pecos Bill heard about the Bear Lake monster and bet some cowpokes that he could wrestle that monster until it said uncle. According to them folks, the fight lasted for days and created a hurricane around Bear Lake. Finally, Bill flung that there monster over his shoulder and it flew so far it went plumb around the world and landed in Loch Ness, where it lives to this day.
+
+Course, we know better than that. The Bear Lake Monster is just hibernating-like. Keep your eyes open at dusk and maybe you'll see it come out to feed. Just be careful swimming in the lake, or you might be its next meal! </p>
+
+  
+  <img id="img3" class="mySlides" src="../static/images/Water2.png"  >
+  <p id="img4"  >
+  
+  Babe the Blue Ox 
+<br>
+retold by
+<br>
+S. E. Schlosser
+<br>
+Well now, one winter it was so cold that all the geese flew backward and all the fish moved south and even the snow turned blue. Late at night, it got so frigid that all spoken words froze solid afore they could be heard. People had to wait until sunup to find out what folks were talking about the night before.
+
+Paul Bunyan went out walking in the woods one day during that Winter of the Blue Snow. He was knee-deep in blue snow when he heard a funny sound between a bleat and a snort. Looking down, he saw a teeny-tiny baby blue ox jest a hopping about in the snow and snorting with rage on account of he was too short to see over the drifts.
+
+Paul Bunyan laughed when he saw the spunky little critter and took the little blue mite home with him. He warmed the little ox up by the fire and the little fellow fluffed up and dried out, but he remained as blue as the snow that had stained him in the first place. So Paul named him Babe the Blue Ox.
+
+Well, any creature raised in Paul Bunyan's camp tended to grow to massive proportions, and Babe was no exception. Folks that stared at him for five minutes could see him growing right before their eyes. He grew so big that 42 axe handles plus a plug of tobacco could fit between his eyes and it took a murder of crows a whole day to fly from one horn to the other. The laundryman used his horns to hang up all the camp laundry, which would dry lickety-split because of all the wind blowing around at that height.
+
+Whenever he got an itch, Babe the Blue Ox had to find a cliff to rub against, 'cause whenever he tried to rub against a tree it fell over and begged for mercy. To whet his appetite, Babe would chew up thirty bales of hay, wire and all. It took six men with picaroons to get all the wire out of Babe's teeth after his morning snack. Right after that he'd eat a ton of grain for lunch and then come pestering around the cook - Sourdough Sam - begging for another snack.
+
+Babe the Blue Ox was a great help around Paul Bunyan's logging camp. He could pull anything that had two ends, so Paul often used him to straighten out the pesky, twisted logging roads. By the time Babe had pulled the twists and kinks out of all the roads leading to the lumber camp, there was twenty miles of extra road left flopping about with nowhere to go. So Paul rolled them up and used them to lay a new road into new timberland.
+
+Paul also used Babe the Blue Ox to pull the heavy tank wagon which was used to coat the newly-straightened lumber roads with ice in the winter, until one day the tank sprang a leak that trickled south and became the Mississippi River. After that, Babe stuck to hauling logs. Only he hated working in the summertime, so Paul had to paint the logging roads white after the spring thaw so that Babe would keep working through the summer.
+
+One summer, as Babe the Blue Ox was hauling a load of logs down the white-washed road and dreaming of the days when the winter would feel cold again and the logs would slide easier on the "ice", he glanced over the top of the mountain and caught a glimpse of a pretty yeller calf grazing in a field. Well, he twisted out of his harness lickety-split and stepped over the mountain to introduce himself. It was love at first sight, and Paul had to abandon his load and buy Bessie the Yeller Cow from the farmer before Babe would do any more hauling.
+
+Bessie the Yeller Cow grew to the massive, yet dainty proportions that were suitable for the mate of Babe the Blue Ox. She had long yellow eyelashes that tickled the lumberjacks standing on the other end of camp each time she blinked. She produced all the dairy products for the lumber camp. Each day, Sourdough Sam made enough butter from her cream to grease the giant pancake griddle and sometimes there was enough left over to butter the toast!
+
+The only bone of contention between Bessie and Babe was the weather. Babe loved the ice and snow and Bessie loved warm summer days. One winter, Bessie grew so thin and pale that Paul Bunyan asked his clerk Johnny Inkslinger to make her a pair of green goggles so she would think it was summer. After that, Bessie grew happy and fat again, and produced so much butter that Paul Bunyan used the leftovers to grease the whitewashed lumber roads in summer. With the roads so slick all year round, hauling logs became much easier for Babe the Blue Ox, and so Babe eventually came to like summer almost as much as Bessie.</p>
+  
+  <img id="img5" class="mySlides" src="../static/images/wind2.jpg"    >
+  <p id="img6"  > 
+  
+  Blackbeard's Ghost 
+<br>
+retold by
+<br>
+S. E. Schlosser
+<br>
+The nefarious pirate Blackbeard (who's real name was Edward Teach) was a tall man with a very long black beard that covered most of his face and extended down to his waist. He tied his beard up in pigtails adorned with black ribbons. He wore a bandolier over his shoulders with three braces of pistols and sometimes he would hang two slow-burning cannon fuses from his fur cap that wreathed his head in black smoke. Occasionally, he would set fire to his rum using gunpowder, and he would drink it, flames and all. Many people thought he was the Devil incarnate.
+
+For twenty-seven months, Blackbeard terrorized the sailors of the Atlantic and the Caribbean, ambushing ships and stealing their cargo, killing those who opposed him, often attacking in the dim light of dawn or dusk when his pirate ship was most difficult to see. He would sail under the flag of a country friendly to the nationality of the ship he was attacking, and then hoist his pirate flag at the last moment. When prisoners surrendered willingly, he spared them. When they did not, his magnanimity failed. One man refused to give up a diamond ring he was wearing and the pirate cut the ring off, finger and all. Once Blackbeard blockaded Charleston, South Carolina with his ships, taking many wealthy citizens hostage until the townspeople met his ransom. Later, Blackbeard ran one of his ships - the Queen Anne's Revenge - aground. Some say he did it on purpose because he wanted to break up the pirate fleet and steal the booty for himself.
+
+In November of 1718, Blackbeard retreated to his favorite hideaway -- called Teach's Hole -- off Ocracoke Island. There, he hosted a wild pirate party with drinking, dancing and large bonfires. The party lasted for days, and several North Carolina citizens sent word to Governor Alexander Spotswood of Virginia. Governor Spotswood immediately ordered two sloops, commanded by Lieutenant Robert Maynard of the Royal Navy, to go to Ocracoke and capture the pirate.
+
+On November 21, 1718, Maynard engaged Blackbeard in a terrible battle. One of Maynard's ships were between Blackbeard and freedom. Blackbeard sailed his ship - the Adventure - in towards shore. It looked like the pirate was going to crash his ship, but at the last second the ship eased through a narrow channel. One of the pursuing Navy ships went aground on a sand bar when they tried to pursue the Adventure. Blackbeard fired his cannons at the remaining ship and many of Maynard's men were killed. The rest he ordered below the deck under cover of the gun smoke, hoping to fool the pirates into thinking they had won. When the pirates boarded the ship, Maynard and his men attacked the pirates.
+
+Outnumbered, the pirates put up a bloody fight. Blackbeard and Maynard came face to face. They both shot at each other. Blackbeard's shot missed Maynard, but Maynard's bullet hit the pirate. Blackbeard swung his cutlass and managed to snap off Maynard's sword blade near the hilt. As Blackbeard prepared to deliver the death-blow, one of Maynard's men cut Blackbeard's throat from behind. Blackbeard's blow missed its mark, barely skinning Maynard's knuckles. Infuriated, Blackbeard fought on as the blood spouted from his neck. Maynard and his men rushed the pirate. It took a total of five gunshots and about twenty cuts before Blackbeard fell down dead.
+
+Maynard seemed to think that the only way to ensure that Blackbeard was dead was to remove his head. They hung the head from the bowsprit and threw the pirate's body overboard. As the body hit the water, the head hanging from the bowsprit shouted: "Come on Edward" and the headless body swam three times around the ship before sinking to the bottom.
+
+From that day to this, Blackbeard's ghost has haunted Teach's Hole, forever searching for his missing head. Sometimes, the headless ghost floats on the surface of the water, or swims around and around and around Teach's Hole, glowing just underneath the water. Sometimes, folks see a strange light coming from the shore on the Pamlico Sound side of Ocracoke Island and know that it is "Teach's light". On night's that the ghost light appears, if the wind is blowing inland, you can still hear Blackbeard's ghost tramping up and down and roaring: 'Where's my head?</p>
+   
+  <img id="img7" class="mySlides" src="../static/images/time.jpg" >
+  <p id="img8"   > 
+  
+  Magic Touch
+  <br>
+From my hotel room window, I see an oversized billboard with his face on it: Jason, the Great Magician.
+
+I absent-mindedly turn the pages of the phone book and come across a city map. Sipping my iced latté, I run my fingers along the streets from the hotel to the opera hall. Not more than a half-hour walk.
+
+I glance at the clock. The show starts in one hour. Plenty of time! I gulp the last three sips of my latté and hop in the shower. Soon I’m on my way to the show, carrying a fancy black handbag and a genuine smile.
+
+The billboard looks even more impressive from outside. The Great Jason's eyes seem to be glancing through me. I shiver and walk faster. I feel like a child about to open her birthday presents.
+
+The hall is dark when I come in; the show is about to begin. I make my way backstage just as the great magician puts on his top hat.
+
+"Daddy, I'm so glad to see you," I say in a half-whisper. "I'm in town for the writer's workshop, but I just couldn't miss your show." I give him a quick hug and go back into the seating area, leaving him with a startled smile. I settle down in the darkness, and the curtains open.
+
+Magically, that show remains the Great Jason's best performance to this day
+</p>
+  <img id="img9"  class="mySlides" src="../static/images/mwskyglow.jpg"  >
+  <p id="img10"   > 
+  Mysterious Stranger
+<br>
+
+He really did look like a tourist, with a camera around his neck and a bottle of sunscreen sticking out of his tote bag.
+
+The portly man sat on the terrace, sipping lemonade and pretending to look at a glossy cruise brochure. His sunglasses masked his eyes, but I knew he wasn't looking at the brochure: he hadn't turned a page for the last ten minutes.
+
+As I brought him his clam chowder, he coughed up a "thank you" and looked at me briefly. I tried not to stare at the tiny scar across his left eyebrow.
+
+I walked back inside with my empty tray, shaking my head. He looked familiar, but I couldn't quite place him.
+
+Then it hit me. The car accident. The mysterious stranger who helped me out of my smashed car, just before it exploded. I rushed back to his table.
+
+He was gone.
+
+I moved his saucer and found his tip, along with a card:
+
+I am deeply indebted to you. The night of your car accident, I was on my way to rob a jewelry store. Saving your life brought things back in perspective. I now live an honest life, thanks to you. God bless you! Mr. D.
+
+I shivered. The night of my car accident, I was heading for an interview in a shady dance club. Seeing human kindness through his heroic gesture turned my life around and brought faith back into my life.
+
+I unfolded the tip he left. Among the singles was a grand with a pen mark underlining "In God We Trust."
+
+I said a silent prayer for him and got back to work, smiling.</p>
+  <img id="img11" class="mySlides" src="../static/images/avatar.jpg"    >
+  <p id="img12" >  
+  Spiritual Thunderstorm
+  <br>
+I stepped outside into a gorgeous summer day. The sun made everything look bright and cheerful. It would have been an ideal day for a picnic—if I still had a special someone to picnic with.
+
+Nobody would have suspected the thunderstorm going on inside my heart. Lightnings illuminated hidden emotions briefly, followed by a clasp of crushed hopes. Droplets of internal tears poured down, washing off what remained of my romantic dreams.
+
+I sat at the bus stop with a book, reading the same paragraph for the fifth time and trying to look indifferent to my internal weather patterns. Sunglasses masked my puffy eyes and returned the reflection of a nearby flower. I will never love again. Love is just an illusion leading nowhere.
+
+I was so absorbed in my thoughts, I didn't notice the man taking a seat beside me.
+
+"Excuse me, Miss, but I couldn't help noticing that you're reading O. Henry. He's my favorite author."
+
+His deep voice startled me. His friendly smile warmed up my damp heart and blew away some of the storm clouds.
+
+"He's my favorite as well." I tried to return his smile.
+
+We spent the next fifteen minutes talking about literature and its influence in today's culture. The bus came and went. We pretended not to notice.
+
+"By the way, my name is Mark." As his warm hand shook mine, an electric current coursed through me.
+
+"Do you care to join me for lunch?" he added, ignoring my blushing cheeks. "Let's start all over again, shall we? I'm sorry about this morning."
+
+A rainbow appeared, leading the way to a heart of gold. I followed it.</p>
+  <img id="img13" class="mySlides" src="../static/images/earth.jpeg" >
+  <p id="img14"   >
+
+  Ah, The Beach!
+<br>
+Marilou took off her pink sandals and ran on the sweltering sand. She tiptoed into the water, giggling as a wave washed her legs.
+
+She looked back at the big red and white umbrella and waved at her mother, who was getting a much needed suntan.
+
+Her mother smiled and waved with two fingers, holding a peach in one hand and a bottle of ice cold lemonade in the other.
+
+A big wave came and swept Marilou's feet, making her fall into the water.
+
+She tried to scream but swallowed a gulp of salty water instead. She didn't know which way was up and which was down. Her sweeping hand touched something with a tiny claw in the sand. She screamed bubbles and tried hard to swim.
+
+The wave receded, dumping the startled girl upon the soft, wet beach.
+
+Marilou coughed and rubbed her eyes, struggling to get back up. Grains of sand in her blue swimsuit scratched her skin.
+
+She looked back toward her mother, who was standing up with a worried frown partly covered by sunglasses.
+
+Marilou ran back to the big umbrella, tiptoeing through the hot sand. She smelled of salt and seaweeds. She took her mother's big, warm hand with her cold, wet one.
+
+"Come play with me in the waves, Mommy! This is the bestest vacation ever!"</p>
+  <img id="img15" class="mySlides" src="../static/images/fire.png"    >
+  <p id="img16" > 
+  Secret Mission
+  <br>
+
+"Are you sure you weren't followed?"
+
+"Positive."
+
+"Were you able to secure the equipment?"
+
+Zeth glanced around and pulled a black bandanna off a shiny red metal box. He opened it ceremoniously.
+
+"With this under our power," Mauricio declared, "we will be able to annihilate the enemy before complete invasion."
+
+Zeth carefully picked one of the silver elements from the box and examined it thoughtfully.
+
+Just as he laid the piece back in place, the ground shook, the room darkened, and a voice boomed from above:
+
+"What are you two doing under the table with my toolbox?"</p>
+  <img id="img17"  class="mySlides" src="../static/images/water.jpg">
+  <p id="img18" > 
+  Paradoxical Neighbor
+  <br>
+I was in the middle of a sweet dream when a noise startled me. Bam! Bam! It sounded like a hammer pounding on a tough nail. Bam! Bam! BAM!
+
+Who could be hammering at three in the morning? It must be Charlie again, making another invention.
+
+Just as I was putting on my slippers and bathrobe, the noise changed. I sat at the edge of my bed and listened. Tick! Tick! Tick! It reminded me of my first wristwatch. Its regular tempo had always helped me fall asleep.
+
+I started dozing off, dangerously leaning to the left, when the ticking stopped. It was now replaced by a buzz, similar to the noise coming from a beehive in midsummer, only louder. I shivered. I'm allergic to bees! Even just thinking about it or hearing a bee-like sound makes me swell.
+
+"That's it!" I shouted, now wide awake. "I can't take it anymore!" I marched to the next apartment and knocked.
+
+My neighbor immediately opened the door. His curly brown hair was sticking up every which way. He wore puffy lilac striped pants and a loose raspberry shirt.
+
+"Hi, there, Lucy!" he chimed. "What's up?"
+
+I pointed at my noiseless watch. "Do you know what time it is?"
+
+He grabbed my arm and glanced at my timepiece. "Oh, my! I didn't realize it was that late. I'm busy working on a machine that can cure insomnia. It's almost finished. You wanna see it?"
+
+I should have known. His last invention was supposed to annihilate bad smells, only it was powered by rotten eggs.</p>
+ 
+  <div class="w3-row-padding w3-section" >
+  
+    <div class="w3-col s4">
+      <img  id="img19" src="../static/images/outside.jpg"   onclick="currentDiv(1)">
+	<p id="img20"  > 
+	<strong>Bear Lake Monster</strong>
+	<br>
+		If you travel to Bear Lake in Utah on a quiet day, you just might catch a glimpse of the Bear Lake Monster...</p>
+	  
+    </div>
+    <div class="w3-col s4">
+	
+      <img id="img21" src="../static/images/Water2.png"   onclick="currentDiv(2)">
+	  <p id="img22"  > 
+	<strong>Babe the Blue Ox </strong>
+	<br>
+	Well now, one winter it was so cold that all the geese flew backward and all the fish moved south and even the snow turned blue....</p>
+	  
+	  
+    </div>
+    <div class="w3-col s4">
+      <img id="img23" src="../static/images/wind2.jpg"   onclick="currentDiv(3)">
+	  <p id="img24"  > 
+	<strong>Blackbeard's Ghost </strong>
+<br>
+The nefarious pirate Blackbeard (who's real name was Edward Teach)
+ was a tall man with a very long black beard that covered most of his face and extended down to his waist....</p>
+	<br>
+	  <br>
+	   
+    </div>
+	<div class="w3-col s4">
+      <img id="img25" src="../static/images/time.jpg"   onclick="currentDiv(4)">
+	 <p id="img26"  > 
+	<strong> Magic Touch</strong>
+  <br>
+From my hotel room window, I see an oversized billboard with his face on it: Jason, the Great Magician....</p>
+    </div>
+	<div class="w3-col s4">
+      <img id="img27" src="../static/images/mwskyglow.jpg"  onclick="currentDiv(5)">
+	 <p id="img28"  > 
+	<strong> Mysterious Stranger</strong>
+<br>
+
+He really did look like a tourist, with a camera around his neck and a bottle of sunscreen sticking out of his tote bag....</p>
+    </div>
+	<div class="w3-col s4">
+      <img id="img29" src="../static/images/avatar.jpg"   onclick="currentDiv(6)">
+	<p id="img30"  > 
+	<strong>Spiritual Thunderstorm</strong>
+  <br>
+I stepped outside into a gorgeous summer day. The sun made everything look bright and cheerful. It would have been an ideal day for a picnic—if I still had a special someone to picnic with....</p>
+    <br>
+	   <br>
+	</div>
+	<div class="w3-col s4">
+      <img id="img31" src="../static/images/earth.jpeg"  onclick="currentDiv(7)">
+	  <p id="img32"  > 
+	<strong>Ah, The Beach!</strong>
+<br>
+Marilou took off her pink sandals and ran on the sweltering sand. She tiptoed into the water, giggling as a wave washed her legs. She looked back at...</p>
+    </div>
+	<div class="w3-col s4">
+      <img id="img33" src="../static/images/fire.png"   onclick="currentDiv(8)">
+	<p id="img34"   > 
+	<strong>Secret Mission</strong>
+  <br>
+
+"Are you sure you weren't followed?"
+
+"Positive."
+
+"Were you able to secure the equipment?"
+
+Zeth glanced around and pulled a black bandanna off a shiny red metal box. He opened it ...</p>
+    </div>
+	<div class="w3-col s4">
+      <img id="img35" src="../static/images/water.jpg"   onclick="currentDiv(9)">
+	<p id="img36"  > 
+	<strong>Paradoxical Neighbor</strong>
+  <br>
+I was in the middle of a sweet dream when a noise startled me. Bam! Bam! It sounded like a hammer pounding on a tough nail. Bam! Bam! BAM!...</p>
+    </div>
+	
+	<a id="sidebar2" class="w3-btn-floating" style="height:85%;  position:absolute;top:8%;left:7%; color: rgba(0,0,0, 1); background-color:rgba(205,200,177, 0.5);" onclick="plusDivs(-1)"><br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;<br>&#8666;</a>
+	<a id="sidebar3" class="w3-btn-floating" style="height:85%; position:absolute;top:8%;right:7%; color: rgba(0,0,0, 1); background-color:rgba(205,200,177, 0.5);" onclick="plusDivs(1)"><br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;<br>&#8667;</a>
+	
+	
+
+  </div>
+</div>
+
+
+
+
+<script>
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-border-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-border-red";
+}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+function bigImg(x) {
+    x.style.height = "10%";
+    x.style.width = "50%";
+	
+}
+
+function normalImg(x) {
+    x.style.height = "25%";
+    x.style.width = "32%";
+}
+
+
+
+
+
+var delay = function (img1, callback) {
+    var timeout = null;
+    img1.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img1.onclick = function() {
+	img2.style.display = "none";
+     
+	  }
+	img2.onclick = function() {
+	img2.style.display = "none";
+     
+	  }
+
+    img2.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img2.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+delay(document.getElementById('img1'), function() {
+    img2.style.display = "block";
+});
+
+
+var delay = function (img3, callback) {
+    var timeout = null;
+    img3.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img3.onclick = function() {
+	img4.style.display = "none";
+     
+	  }
+	img4.onclick = function() {
+	img4.style.display = "none";
+     
+	  }
+
+    img4.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img4.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+delay(document.getElementById('img3'), function() {
+    img4.style.display = "block";
+});
+
+
+
+var delay = function (img5, callback) {
+    var timeout = null;
+    img5.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img5.onclick = function() {
+	img6.style.display = "none";
+     
+	  }
+	img6.onclick = function() {
+	img6.style.display = "none";
+     
+	  }
+
+    img6.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img6.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img5'), function() {
+    img6.style.display = "block";
+});
+
+
+
+var delay = function (img7, callback) {
+    var timeout = null;
+    img7.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img7.onclick = function() {
+	img8.style.display = "none";
+     
+	  }
+	img8.onclick = function() {
+	img8.style.display = "none";
+     
+	  }
+
+    img8.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img8.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img7'), function() {
+    img8.style.display = "block";
+});
+
+
+var delay = function (img9, callback) {
+    var timeout = null;
+    img9.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img9.onclick = function() {
+	img10.style.display = "none";
+     
+	  }
+	img10.onclick = function() {
+	img10.style.display = "none";
+     
+	  }
+
+    img10.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img10.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img9'), function() {
+    img10.style.display = "block";
+});
+
+
+var delay = function (img11, callback) {
+    var timeout = null;
+    img11.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img11.onclick = function() {
+	img12.style.display = "none";
+     
+	  }
+	img12.onclick = function() {
+	img12.style.display = "none";
+     
+	  }
+
+    img12.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img12.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img11'), function() {
+    img12.style.display = "block";
+});
+
+
+var delay = function (img13, callback) {
+    var timeout = null;
+    img13.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img13.onclick = function() {
+	img14.style.display = "none";
+     
+	  }
+	img14.onclick = function() {
+	img14.style.display = "none";
+     
+	  }
+
+    img14.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img14.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img13'), function() {
+    img14.style.display = "block";
+});
+
+
+var delay = function (img15, callback) {
+    var timeout = null;
+    img15.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img15.onclick = function() {
+	img16.style.display = "none";
+     
+	  }
+	img16.onclick = function() {
+	img16.style.display = "none";
+     
+	  }
+
+    img16.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img16.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+delay(document.getElementById('img15'), function() {
+    img16.style.display = "block";
+});
+
+
+var delay = function (img17, callback) {
+    var timeout = null;
+    img17.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+	img17.onclick = function() {
+	img18.style.display = "none";
+     
+	  }
+	img18.onclick = function() {
+	img18.style.display = "none";
+     
+	  }
+
+    img18.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img18.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img17'), function() {
+    img18.style.display = "block";
+});
+
+
+var delay = function (img19, callback) {
+    var timeout = null;
+    img19.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 530);
+    };
+
+    img19.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img20.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img19'), function() {
+    img20.style.display = "block";
+});
+
+
+var delay = function (img21, callback) {
+    var timeout = null;
+    img21.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img21.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img22.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img21'), function() {
+    img22.style.display = "block";
+	
+});
+var delay = function (img23, callback) {
+    var timeout = null;
+    img23.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img23.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img24.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img23'), function() {
+    img24.style.display = "block";
+});
+var delay = function (img25, callback) {
+    var timeout = null;
+    img25.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img25.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img26.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img25'), function() {
+    img26.style.display = "block";
+});
+var delay = function (img27, callback) {
+    var timeout = null;
+    img27.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img27.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img28.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img27'), function() {
+    img28.style.display = "block";
+});
+var delay = function (img29, callback) {
+    var timeout = null;
+    img29.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img29.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img30.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img29'), function() {
+    img30.style.display = "block";
+});
+var delay = function (img31, callback) {
+    var timeout = null;
+    img31.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img31.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img32.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img31'), function() {
+    img32.style.display = "block";
+});
+var delay = function (img33, callback) {
+    var timeout = null;
+    img33.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img33.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img34.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img33'), function() {
+    img34.style.display = "block";
+});
+
+var delay = function (img35, callback) {
+    var timeout = null;
+    img35.onmouseover = function() {
+        // Set timeout to be a timer which will invoke callback after 1s
+        timeout = setTimeout(callback, 590);
+    };
+
+    img35.onmouseout = function() {
+        // Clear any timers set to timeout
+	
+    img36.style.display = "none";
+	 clearTimeout(timeout);
+    }
+};
+
+
+delay(document.getElementById('img35'), function() {
+    img36.style.display = "block";
+});
+
+ 
+
+
+
+</script>
+
+
+
+	
+  </body>
+</html>
