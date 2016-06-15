@@ -1,0 +1,5 @@
+db.define_table('picture',
+                Field('name',requires=IS_NOT_EMPTY()),
+                INPUT(_type='text', _name='name', requires=IS_LENGTH(32)),
+                Field('profile',type='text', length=1000),
+                Field('picture','upload'))
